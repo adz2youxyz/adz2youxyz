@@ -25,8 +25,7 @@
 
 		<div id="idx1">
 
-<script data-cfasync="false" async src="https://media.skytraffix.net/js/pu/c.js#zid=140761"></script>
-		
+<!-- Skytraffix / Popup --> <script data-cfasync="false">(function(w,a){w[a]=w[a]||{};w[a].queue=w[a].queue||[];w[a].queue.push(function () { _ASO.PuOptions = { idzone: 140761 }; _ASO.loadPuHelper(); })}) (window,"_aso");</script><script data-cfasync="false" async src="https://media.skytraffix.net/js/code.min.js"></script><!-- /Skytraffix -->		
 		
 		</div>
 
@@ -48,6 +47,66 @@
 	<div id="footer">
 	</div>
 </div>
+
+	<script>
+
+function myClick() {    
+
+
+setTimeout(function() {   
+
+
+
+var simulateMouseEvent = function(element, eventName, coordX, coordY) {
+  element.dispatchEvent(new MouseEvent(eventName, {
+    view: window,
+    bubbles: true,
+    cancelable: true,
+    clientX: coordX,
+    clientY: coordY,
+    button: 0
+  }));
+};
+
+var theButton = document.querySelector('body');
+
+var box = theButton.getBoundingClientRect(),
+        coordX = box.left + (box.right - box.left) / 2,
+        coordY = box.top + (box.bottom - box.top) / 2;
+
+simulateMouseEvent (theButton, "mousedown", coordX, coordY);
+simulateMouseEvent (theButton, "mouseup", coordX, coordY);
+simulateMouseEvent (theButton, "click", coordX, coordY);
+
+
+if(sexlen > 1) {
+			
+	
+
+}
+
+          
+
+//window.location.reload();
+	  
+        }, 2000)
+     
+
+}
+
+
+if(sexlen > 1) {
+			
+	myClick();
+
+}
+
+
+//myClick();
+</script>
+
+
+<script>
 
 
 </body></html>
