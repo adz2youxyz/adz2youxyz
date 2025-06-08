@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.get("https://s.magsrv.com/v1/vast.php?idzone=5635954", function(data, status){
+    	var serializer = new XMLSerializer();
+var xmlString = serializer.serializeToString(data);
+
+       //var xmlDoc = $(xmlDoc)$.parseXML( data );
+      alert("Data: " + xmlString + "\nStatus: " + status);
+    });
+  });
+});
+</script>
+</head>
+<body>
+
+<button>Send an HTTP GET request to a page and get the result back</button>
+
+</body>
+</html>
