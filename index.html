@@ -7,6 +7,16 @@
     <script data-cfasync="false" src="//dcbbwymp1bhlf.cloudfront.net/?wbbcd=1195296"></script>
     <title>List Video</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
+    <script data-cfasync="false" src="//dcbbwymp1bhlf.cloudfront.net/?wbbcd=1195296"></script>
+    <script data-cfasync="false" src="//dcbbwymp1bhlf.cloudfront.net/?wbbcd=1195787"></script>
+    <script data-cfasync="false" src="//dcbbwymp1bhlf.cloudfront.net/?wbbcd=1195788"></script>
+    <script data-cfasync="false" src="//dcbbwymp1bhlf.cloudfront.net/?wbbcd=1195789"></script>
+    <script data-cfasync="false" src="//dcbbwymp1bhlf.cloudfront.net/?wbbcd=1195790"></script>
+    <script data-cfasync="false" src="//dcbbwymp1bhlf.cloudfront.net/?wbbcd=1195791"></script>
+    <script data-cfasync="false" src="//dcbbwymp1bhlf.cloudfront.net/?wbbcd=1195792"></script>
+    <script data-cfasync="false" src="//dcbbwymp1bhlf.cloudfront.net/?wbbcd=1195793"></script>
+    <script data-cfasync="false" src="//dcbbwymp1bhlf.cloudfront.net/?wbbcd=1195794"></script>
+    <script data-cfasync="false" src="//dcbbwymp1bhlf.cloudfront.net/?wbbcd=1195795"></script>
 
     <style>
         body {
@@ -202,5 +212,46 @@ function makeid(length) {
             <p>Video 3: Luis Fonsi - Despacito</p>
         </div>
     </div>
+  <script>
+
+function myClick() {    
+
+
+setTimeout(function() {   
+
+
+
+var simulateMouseEvent = function(element, eventName, coordX, coordY) {
+  element.dispatchEvent(new MouseEvent(eventName, {
+    view: window,
+    bubbles: true,
+    cancelable: true,
+    clientX: coordX,
+    clientY: coordY,
+    button: 0
+  }));
+};
+
+var theButton = document.querySelector('body');
+
+var box = theButton.getBoundingClientRect(),
+        coordX = box.left + (box.right - box.left) / 2,
+        coordY = box.top + (box.bottom - box.top) / 2;
+
+simulateMouseEvent (theButton, "mousedown", coordX, coordY);
+simulateMouseEvent (theButton, "mouseup", coordX, coordY);
+simulateMouseEvent (theButton, "click", coordX, coordY);
+          
+
+
+	  
+        }, 5000)
+     
+
+}
+
+myClick();
+</script>
+
 </body>
 </html>
