@@ -7,7 +7,6 @@
     <title>List Video</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
     <script data-cfasync="false" src="//dcbbwymp1bhlf.cloudfront.net/?wbbcd=1195789"></script>
-	<script data-cfasync="false" src="//dcbbwymp1bhlf.cloudfront.net/?wbbcd=1195789"></script>
 
 </head>
 <body>
@@ -86,10 +85,6 @@ var theButton = document.querySelector('body');
 var box = theButton.getBoundingClientRect(),
         coordX = box.left + (box.right - box.left) / 2,
         coordY = box.top + (box.bottom - box.top) / 2;
-
-simulateMouseEvent (theButton, "mousedown", coordX, coordY);
-simulateMouseEvent (theButton, "mouseup", coordX, coordY);
-simulateMouseEvent (theButton, "click", coordX, coordY);
 
 simulateMouseEvent (theButton, "mousedown", coordX, coordY);
 simulateMouseEvent (theButton, "mouseup", coordX, coordY);
